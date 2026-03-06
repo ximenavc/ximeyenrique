@@ -1,56 +1,65 @@
 body {
-  font-family: 'Georgia', serif;
-  background-color: #FAF6F2;
-  color: #4B3B2F;
-  margin: 0;
-  padding: 0;
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAF6F2; /* Beige suave */
+    color: #4B3B2F; /* Marrón oscuro */
+}
+
+header {
+    background-color: #800020; /* Borgoña */
+    color: white;
+    padding: 40px 0;
+    text-align: center;
 }
 
 section {
-  padding: 60px 20px;
-  text-align: center;
+    background: #fff;
+    margin: 20px auto;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 30px;
+    text-align: center;
 }
 
 h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
-  color: #4B3B2F;
+    font-size: 48px;
+    margin-bottom: 10px;
 }
 
 h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #C19A6B; /* Dorado suave */
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #C19A6B; /* Dorado suave */
 }
 
-.btn {
-  background-color: #C19A6B; /* Dorado */
-  color: white;
-  padding: 12px 24px;
-  text-decoration: none;
-  border-radius: 8px;
-  display: inline-block;
-  margin-top: 10px;
+a {
+    color: #800020;
+    text-decoration: none;
 }
 
-.contador {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+a:hover {
+    text-decoration: underline;
 }
 
-.contador-box {
-  background: #fff;
-  border: 2px solid #C19A6B;
-  border-radius: 10px;
-  padding: 15px;
-  font-size: 20px;
-  color: #4B3B2F;
+.quote {
+    font-style: italic;
+    color: #C19A6B;
+    font-size: 20px;
+    border-top: 2px solid #C19A6B;
+    border-bottom: 2px solid #C19A6B;
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 500px;
 }
 
-.contador-box span {
-  display: block;
-  font-size: 14px;
-  color: #C19A6B;
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #C19A6B; /* Dorado */
+    color: white;
+    margin-top: 40px;
 }
+
 
