@@ -1,98 +1,93 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Ximena & Enrique</title>
-  <link rel="stylesheet" href="styles.css">
-  <!-- Librería de animaciones -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ximena & Enrique's Wedding</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f8f5e6;
+            color: #2c2a29;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #a61e34;
+            color: #f8f5e6;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        h2 {
+            font-size: 1.5em;
+        }
+        .hero {
+            padding: 100px 20px;
+        }
+        .details, .timeline, .dress-code, .contact, .gallery {
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #d4af37;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.9);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #a61e34;
+            color: #f8f5e6;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-  <!-- Portada -->
-  <section class="portada" data-aos="fade-up">
-    <h1>Ximena & Enrique</h1>
-    <p>¡Nos casamos!</p>
-    <p>20 de julio de 2024</p>
-  </section>
-
-  <!-- Bienvenida -->
-  <section class="bienvenida" data-aos="fade-up">
-    <p>Estamos felices de compartir este momento tan especial contigo. ¡Gracias por acompañarnos!</p>
-  </section>
-
-  <!-- Evento -->
-  <section class="evento" data-aos="fade-up">
-    <h2>La Boda</h2>
-    <p><strong>Fecha:</strong> 20 de julio de 2024</p>
-    <p><strong>Hora:</strong> 5:00 PM</p>
-    <p><strong>Lugar:</strong> Hacienda San Carlos</p>
-    <a href="https://maps.google.com/?q=Hacienda+San+Carlos" target="_blank" class="btn">Ver mapa</a>
-  </section>
-
-  <!-- Vestimenta -->
-  <section class="vestimenta" data-aos="fade-up">
-    <h2>Código de vestimenta</h2>
-    <p>Formal elegante. Mujeres: vestido largo. Hombres: traje oscuro.</p>
-  </section>
-
-  <!-- Itinerario -->
-  <section class="itinerario" data-aos="fade-up">
-    <h2>Itinerario</h2>
-    <ul>
-      <li>5:00 PM - Ceremonia</li>
-      <li>6:00 PM - Cóctel</li>
-      <li>7:30 PM - Cena</li>
-      <li>9:00 PM - Baile</li>
-    </ul>
-  </section>
-
-  <!-- Hospedaje -->
-  <section class="hospedaje" data-aos="fade-up">
-    <h2>Hospedaje</h2>
-    <p>Hotel Real del Sol (a 10 min del evento)</p>
-    <a href="https://maps.google.com/?q=Hotel+Real+del+Sol" target="_blank" class="btn">Ver ubicación</a>
-  </section>
-
-  <!-- Cuenta regresiva -->
-  <section class="contador" data-aos="fade-up">
-    <h2>Cuenta regresiva</h2>
-    <div id="countdown"></div>
-  </section>
-
-  <!-- Regalos -->
-  <section class="regalos" data-aos="fade-up">
-    <h2>Regalos</h2>
-    <p>Tu presencia es nuestro mejor regalo. Si deseas apoyarnos, puedes hacerlo aquí:</p>
-    <a href="https://forms.gle/tuformulario" class="btn">Lluvia de sobres</a>
-  </section>
-
-  <!-- RSVP -->
-  <section class="rsvp" data-aos="fade-up">
-    <h2>¿Nos acompañas?</h2>
-    <a href="https://forms.gle/tuformulario" class="btn">Confirmar asistencia</a>
-  </section>
-
-  <!-- Scripts -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-    const fechaBoda = new Date("2024-07-20T17:00:00");
-    const countdown = document.getElementById("countdown");
-    setInterval(() => {
-      const ahora = new Date();
-      const diferencia = fechaBoda - ahora;
-      const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
-      const horas = Math.floor((diferencia / (1000 * 60 * 60)) % 24);
-      const minutos = Math.floor((diferencia / (1000 * 60)) % 60);
-      const segundos = Math.floor((diferencia / 1000) % 60);
-      countdown.innerHTML = `
-        <div class="contador-box">${dias} <span>días</span></div>
-        <div class="contador-box">${horas} <span>horas</span></div>
-        <div class="contador-box">${minutos} <span>minutos</span></div>
-        <div class="contador-box">${segundos} <span>segundos</span></div>
-      `;
-    }, 1000);
-  </script>
+    <header>
+        <div class="hero">
+            <h1>Ximena & Enrique</h1>
+            <h2>"Se nos salía el amor por el borde de nuestras copas"</h2>
+        </div>
+    </header>
+    <section class="details">
+        <h2>Wedding Details</h2>
+        <p><strong>Date:</strong> November 28, 2026</p>
+        <p><strong>Ceremony:</strong> 4:00 PM at Viñedo Tierra de Alonso, Querétaro, Mexico</p>
+        <p><strong>Reception:</strong> 5:00 PM</p>
+        <p><strong>Party:</strong> 6:00 PM</p>
+    </section>
+    <section class="timeline">
+        <h2>Timeline</h2>
+        <p>This section will provide the timeline of events.</p>
+    </section>
+    <section class="dress-code">
+        <h2>Dress Code</h2>
+        <p>Formal. Please avoid wearing white and burgundy.</p>
+    </section>
+    <section class="contact">
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:ximena.velezch@gmail.com">ximena.velezch@gmail.com</a></p>
+        <p>Phone: 55 7373 5585</p>
+    </section>
+    <section class="policy">
+        <h2>Parking & Pets Policy</h2>
+        <p>Parking available. No pets allowed.</p>
+    </section>
+    <section class="gallery">
+        <h2>Photo Gallery</h2>
+        <!-- Images would be included here -->
+    </section>
+    <footer>
+        <p>We can't wait to celebrate with you!</p>
+    </footer>
 </body>
 </html>
-
